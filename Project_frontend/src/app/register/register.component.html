@@ -1,0 +1,91 @@
+<!-- <div>
+  <div style="margin-left: 28%; margin-top: 10%; ">
+    <div class="col-sm-8" style="border: 5px solid black; border-radius: 2%;">
+
+      <div class="card">
+        <h1>User Registation</h1>
+
+        <form>
+          <div class="form-group">
+            <label>First name</label>
+            <input type="text" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" class="form-control"
+              id="stname" placeholder="Enter Name">
+          </div>
+
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}" class="form-control"
+              id="stname" placeholder="Enter Name">
+          </div>
+
+          <div class="form-group">
+            <label>email</label>
+            <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control"
+              id="course" placeholder="Enter Name">
+          </div>
+
+          <div class="form-group">
+            <label>password</label>
+            <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control"
+              id="fee" placeholder="Enter Password">
+          </div>
+
+          &nbsp;
+          <button type="submit" class="btn btn-primary mt-4" (click)="save()">Save</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+ -->
+
+<div>
+
+  <div class="container" style="margin-left: 35%; margin-top: 10%; ">
+
+
+    <div class="row">
+
+      <div class="col-sm-6" style="border: 5px solid white; border-radius: 2%;">
+        <h2 style="text-align: center;">User Registation</h2>
+        <hr>
+        <form>
+          &nbsp;
+          <div class="form-group">
+            <label>First name</label>
+
+            <input type="text" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" class="form-control"
+              id="stname" placeholder="Enter Your Name">
+          </div>
+
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}" class="form-control"
+              id="stname" placeholder="Enter Your Lastname">
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control"
+              id="course" placeholder="Enter Your Email">
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control"
+              id="Password" placeholder="Enter Password">
+          </div>
+
+<hr/>
+          <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary" (click)="save()">Save</button>
+            &nbsp; &nbsp;
+            <input type="reset" class="btn btn-danger" value="Cancel" />
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>

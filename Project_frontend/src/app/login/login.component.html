@@ -1,0 +1,44 @@
+<div>
+
+<div class="container" style="margin-left: 35%; margin-top: 10%; ">
+
+
+  <div class="row">
+
+    <div class="col-sm-5" style="border: 5px solid white; border-radius: 2%;">
+      <h2 style="text-align: center;">Login</h2>
+      <hr>
+      <form>
+        &nbsp;
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          &nbsp;
+          <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="stname"
+            placeholder="Enter Email" />
+        </div>
+        &nbsp;
+        &nbsp;
+
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control"
+            id="stname" placeholder="Enter Password" />
+        </div>
+        <br>
+
+        <!-- <a href="#" style="color: black;" > Create Account</a> -->
+
+        <hr>
+        <div class="form-group" style="text-align: center;">
+          <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+          &nbsp; &nbsp;
+            <input type="reset" class="btn btn-danger"  value="Cancel" />
+        </div>
+
+      </form> 
+    </div>
+  </div>
+</div>
+
+</div>
